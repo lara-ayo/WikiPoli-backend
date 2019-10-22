@@ -6,7 +6,7 @@
 
         if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'])){
 
-            $password=htmlspecialchars($_POST['password']);
+            $password=md5(htmlspecialchars($_POST['password']));
             $name= htmlspecialchars($_POST['name']);
             $email=htmlspecialchars($_POST['email']);
 
