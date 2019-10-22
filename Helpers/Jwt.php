@@ -3,7 +3,7 @@
 
 /* 
 
-    This is the database Class 
+    This is the Jwt Class 
 */
 
     namespace Jwt;

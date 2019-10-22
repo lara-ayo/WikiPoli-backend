@@ -1,8 +1,10 @@
 <?php
     require_once('../autoloader.php');
     
-    use Helper\Admin as Admin;
+    use Helper\Database as DB;
 
-    echo(Admin::say_hello());
+    echo (DB::db_connect());
+
+   
    
 ?>
