@@ -21,9 +21,6 @@
                 return $jwt;
 
 
-            }else{
-
-                throw new Exception("Invalid parameter");
             }
             
             
@@ -37,9 +34,6 @@
                 $jwt=jwt::decode($token,$key,['HS256']);
                 return (array) $jwt;
 
-            }else{
-
-                throw new Exception("Invalid parameter");
             }
             
         }
