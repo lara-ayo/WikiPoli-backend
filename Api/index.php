@@ -1,10 +1,10 @@
 <?php
     require_once('../autoloader.php');
     
+    use Helper\Jwt_client as jwt;
     use Helper\Database as DB;
 
-    echo (DB::db_connect());
-
+    DB::db_connect();
    
    
 ?>
