@@ -49,6 +49,21 @@
             
         }
 
+        public static function get_comment($conn,$post_id){
+            
+            $checkpost="SELECT * FROM comments WHERE post_id='$post_id'";
+            $result = mysqli_query($conn, $checkpost);
+            
+            if(mysqli_num_rows($result) > 0){
+
+                $result=mysqli_fetch_assoc($result);
+                return $result;
+            }else{
+                $arr=[];
+                return $arr;
+            }
+        }
+
         public static function confirm_id($conn,$id){
 
             $checkpost="SELECT * FROM users WHERE user_id='$id'";
